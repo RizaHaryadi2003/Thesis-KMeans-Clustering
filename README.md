@@ -15,8 +15,8 @@ The project follows a comprehensive 8-step Machine Learning lifecycle:
 
 - [x] **1. Load & Rename:** Data ingestion and standardizing feature names.
 - [x] **2. Cleaning & Drop:** Handling missing values and removing irrelevant columns.
-- [ ] **3. Normalization:** Scaling features using `StandardScaler` to ensure distance-based algorithms work optimally.
-- [ ] **4. Exploratory Data Analysis (EDA):** Visualizing data distributions and demographic insights.
+- [X] **3. Normalization:** Scaling features using `StandardScaler` to ensure distance-based algorithms work optimally.
+- [x] **4. Exploratory Data Analysis (EDA):** Visualizing data distributions and demographic insights.
 - [ ] **5. K-Means Clustering:** Applying the core Unsupervised Learning algorithm to segment users.
 - [ ] **6. Cluster Evaluation:** Determining the optimal *K* and validating clusters using Elbow Method and Silhouette Score.
 - [ ] **7. Interpretation:** Profiling each cluster combined with user demographics.
