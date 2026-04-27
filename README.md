@@ -1,40 +1,33 @@
-# Public Information Satisfaction Analysis
+# Public Information Satisfaction Analysis (Diskominfo)
 
-This repository contains a Machine Learning analysis to evaluate community satisfaction with Public Information Services in West Kalimantan Province. The project uses clustering and explainable AI to provide actionable insights for service improvement.
+Analysis of community satisfaction with Public Information Services using K-Means Clustering and SHAP Explainability.
 
-## 🚀 Project Overview
-This analysis focuses on processing survey data from the Communication and Informatics Office (Diskominfo). By utilizing unsupervised learning, we segment the public based on their satisfaction levels and identify the key drivers behind their feedback.
+## 🚀 Data Science Pipeline
+This project follows a structured 10-stage pipeline to ensure data integrity and model interpretability:
 
-## 🛠️ Methodology
+1. **Data Acquisition**: Importing raw survey datasets regarding public service satisfaction.
+2. **Exploratory Data Analysis (EDA)**: Visualizing score distributions and identifying initial patterns across Q1-Q15.
+3. **Data Cleaning**: Handling missing values and filtering out non-essential administrative features.
+4. **Feature Engineering**: Selecting specific dimensions of public information for targeted analysis.
+5. **Data Scaling**: Implementing `StandardScaler` to normalize the feature range for distance-based algorithms.
+6. **Optimal Cluster Selection**: Utilizing the **Elbow Method** and **Silhouette Analysis** to determine the best number of segments.
+7. **K-Means Clustering**: Segmenting the community into distinct satisfaction groups (e.g., Satisfied vs. Dissatisfied).
+8. **Supervised Learning**: Training a **Random Forest** classifier to validate and predict cluster membership.
+9. **Explainable AI (SHAP)**: Generating SHAP values to identify which factors (like SIKEDIP accessibility) drive satisfaction.
+10. **Strategic Insights**: Formulating data-driven recommendations for government policy improvement.
 
-### 1. Data Preprocessing
-* **Standardization**: Applying `StandardScaler` to normalize survey features (Q1-Q15).
-* **Data Cleaning**: Handling missing values and removing non-essential columns for the model.
+## 🛠️ Tech Stack
+* **Language**: Python
+* **Libraries**: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, SHAP
+* **Environment**: Google Colab / Jupyter Notebook
 
-### 2. Clustering (K-Means)
-The model segments respondents into 3 distinct groups:
-* **Cluster 0 (Satisfied)**: High satisfaction ratings across most indicators.
-* **Cluster 1 (Neutral)**: Moderate or mixed satisfaction levels.
-* **Cluster 2 (Dissatisfied)**: Low satisfaction ratings, indicating areas for urgent improvement.
+## 📊 Key Results
+* **Optimal Clusters**: 3 Distinct Community Segments.
+* **Top Satisfaction Driver**: Q10 (Ease of access to information systems like SIKEDIP).
+* **Secondary Driver**: Q15 (Staff ethics and responsiveness).
 
-### 3. Model Interpretability (SHAP)
-Using **SHAP (SHapley Additive exPlanations)** with a Random Forest classifier to explain the clustering results:
-* **Global Importance**: Identifying which survey questions (features) have the biggest impact on the final satisfaction score.
-* **Feature Analysis**: Understanding the specific reasons why a respondent falls into the "Dissatisfied" cluster.
-
-## 📊 Key Findings
-Based on the SHAP values, the most influential factors are:
-1. **Q10**: Accessibility of information systems (e.g., SIKEDIP).
-2. **Q15**: Staff ethics and responsiveness.
-3. **Q5**: Information accuracy and updates.
-
-## 💻 Requirements
-To run the notebook, you will need:
-* Python 3.x
-* Pandas & NumPy
-* Scikit-learn
-* Matplotlib & Seaborn
-* SHAP
+## 💻 Installation
+To replicate this analysis, install the required dependencies:
 
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn shap
