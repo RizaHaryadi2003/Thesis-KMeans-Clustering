@@ -17,10 +17,10 @@ The project follows a comprehensive 8-step Machine Learning lifecycle:
 - [x] **2. Cleaning & Drop:** Handling missing values and removing irrelevant columns.
 - [X] **3. Normalization:** Scaling features using `StandardScaler` to ensure distance-based algorithms work optimally.
 - [x] **4. Exploratory Data Analysis (EDA):** Visualizing data distributions and demographic insights.
-- [ ] **5. K-Means Clustering:** Applying the core Unsupervised Learning algorithm to segment users.
-- [ ] **6. Cluster Evaluation:** Determining the optimal *K* and validating clusters using Elbow Method and Silhouette Score.
-- [ ] **7. Interpretation:** Profiling each cluster combined with user demographics.
-- [ ] **8. SHAP / Explainability:** Identifying the most dominant features driving the satisfaction score in each cluster.
+- [x] **5. K-Means Clustering:** Applying the core Unsupervised Learning algorithm to segment users.
+- [x] **6. Cluster Evaluation:** Determining the optimal *K* and validating clusters using Elbow Method and Silhouette Score.
+- [x] **7. Interpretation:** Profiling each cluster combined with user demographics.
+- [x] **8. SHAP / Explainability:** Identifying the most dominant features driving the satisfaction score in each cluster.
 
 ## 🛠️ Tech Stack
 * **Language:** Python
