@@ -29,7 +29,5 @@ The project follows a comprehensive 8-step Machine Learning lifecycle:
 * **Explainable AI:** SHAP
 * **Visualization:** Matplotlib, Seaborn
 
-## 🚀 How to Use
-1. Clone this repository:
    ```bash
    git clone [https://github.com/UsernameKamu/NamaRepoKamu.git](https://github.com/UsernameKamu/NamaRepoKamu.git)
