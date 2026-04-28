@@ -108,6 +108,20 @@ These findings highlight that **technology usability + human interaction** joint
 
 ## ⚙️ Installation & Usage
 
+## 🏗️ Project Pipeline
+
+```mermaid
+flowchart TD
+    A[Raw Survey Data Q1–Q15] --> B[Data Cleaning & Preprocessing]
+    B --> C[Exploratory Data Analysis]
+    C --> D[Feature Engineering]
+    D --> E[Data Standardization]
+    E --> F[Cluster Optimization]
+    F --> G[K-Means Clustering]
+    G --> H[Random Forest Validation]
+    H --> I[SHAP Explainability]
+    I --> J[Insights & Policy Recommendations]
+
 To replicate this analysis locally:
 
 ```bash
